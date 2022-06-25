@@ -1,1 +1,1 @@
-# My Offcial Portfolio Website as Frontend/FullStack Developer
+# My Official Portfolio Website as Frontend/FullStack Developer
