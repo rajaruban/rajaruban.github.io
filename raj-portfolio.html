@@ -95,8 +95,6 @@
   }
   h1{
    font-family: 'Black Ops One', cursive;
-
-
  }
 
  h4{
@@ -116,16 +114,23 @@ h6:hover{
 }
 
 #boardSetting:hover{
-  background-color: #F8F9FA;
-  border-radius: 25px;
-  opacity:0.99;
-  color: black;
+  background: rgba(231, 229, 229, 0.36);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.6px);
+  -webkit-backdrop-filter: blur(14.6px);
+  border: 1px solid rgba(231, 229, 229, 0.29);
+  color:  white;
 }
+
+#boardSetting:hover h1, #boardSetting:hover a {
+ color: white;
+}
+
 #boardSetting{
   background-color: none;
   color: white;
   border-radius: 25px;
-  opacity:0.85;
   color: white;
   transition: 0.25s all ease-in-out;
 }
@@ -143,7 +148,8 @@ h6:hover{
   opacity:0.85;
   color: white;
   transition: 0.25s all ease-in-out;
-  height: 45vh;
+  height: 60vh;
+  Width:auto;
 }
 
 .nav-link{
@@ -186,27 +192,11 @@ img:hover{
 }
 
 #mainNav{
-  background-color: lightgrey;
-  opacity:0.55;
-  transition: 0.25s all ease-in-out;
-}
-#mainNav:hover{
-  background-color: lightgrey;
-  opacity:1;
-}
+  background-color: lightgrey; 
+}   
 
 #footer1{
-  background-color: black;
-  opacity:55%;
-  color: gold;
-  transition: 0.25s all ease-in-out;
-}
-
-#footer1:hover{
-  background-color: lightgrey;
-  opacity:95%;
-  color: black;
-
+  background-color: transparent;
 }
 
 #mainbutton{
@@ -270,10 +260,13 @@ img:hover{
   transition: 0.25s all ease-in-out;
 }
 #titleSetting1:hover, #titleSetting2:hover, #titleSetting3:hover, #titleSetting4:hover,#titleSetting5:hover,#titleSetting6:hover,#titleSetting7:hover, #titleSetting8:hover,#titleSetting9:hover{
-  font-weight: bold;
-  background-color: white;
-  color:  lightslategray;
-  opacity: 1;
+  background: rgba(231, 229, 229, 0.36);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.6px);
+  -webkit-backdrop-filter: blur(14.6px);
+  border: 1px solid rgba(231, 229, 229, 0.29);
+  color:  white;
 }
 #slideLeft{
   margin-left: -6.8vw;
@@ -303,6 +296,9 @@ img:hover{
   position: absolute;
   left: -60%;
 }
+#footer1 p, #footer1 a{
+ color: white;
+}
 </style>
 
 
@@ -323,9 +319,9 @@ img:hover{
             About</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1" style="font-family: 'DM Sans', sans-serif;">Biodata <i class="fas fa-address-card"></i></a></li>
-              <li><a class="dropdown-item" href="#" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8" style="font-family: 'DM Sans', sans-serif;">Experience <i class="fas fa-briefcase"></i></a></li>
-              <li><a class="dropdown-item" href="#" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6" style="font-family: 'DM Sans', sans-serif;">Educations <i class="fas fa-university"></i></a></li>
-              <li><a class="dropdown-item" href="#" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7" style="font-family: 'DM Sans', sans-serif;">Skills <i class="fas fa-tools"></i></a></li>
+              <li><a class="dropdown-item" href="#" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9" style="font-family: 'DM Sans', sans-serif;">Experience <i class="fas fa-briefcase"></i></a></li>
+              <li><a class="dropdown-item" href="#" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7" style="font-family: 'DM Sans', sans-serif;">Educations <i class="fas fa-university"></i></a></li>
+              <li><a class="dropdown-item" href="#" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8" style="font-family: 'DM Sans', sans-serif;">Skills <i class="fas fa-tools"></i></a></li>
 
             </ul>
           </li>
@@ -362,7 +358,7 @@ img:hover{
       </div>
     </div></nav>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
   <div id="indicatorSlide" class="carousel-indicators">
     <button id="carouselIndi" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button id="carouselIndi" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -371,7 +367,8 @@ img:hover{
     <button id="carouselIndi"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
     <button id="carouselIndi"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
     <button id="carouselIndi"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-     <button id="carouselIndi"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button id="carouselIndi"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button id="carouselIndi"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -437,6 +434,9 @@ img:hover{
         <button id="toggle" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
         <br><br>
         <ul id="dropitem1" style="display: none">
+          <li><a style="text-decoration: none" href="https://rubanero14.github.io">Vue JS - SavaJava - Global Stocks Research & Analysis Toolkit</a></li>
+          <li><a style="text-decoration: none" href="https://rubanero14.github.io/Vue-Tests-Doppler-Effect--Demo/">Vue JS - Doppler Effect Demo</a></li>
+          <li><a style="text-decoration: none" href="https://rubanero14.github.io/Cp-Vue-Test-Demo/">Vue JS - API Loaded News App</a></li>
           <li><a style="text-decoration: none" href="https://rubanero14.github.io/frontend-assessment/Articles">News/Article with API Loaded Responsive Page</a></li>
           <li><a style="text-decoration: none" href="https://rubanero14.github.io/frontend-assessment/Update-Profile.html">Update Profile Support with API Loaded DataTable Responsive Page</a></li>
           <li><a style="text-decoration: none" href="https://rubanero14.github.io/week5/index.html">RockPaperScissor Game</a></li>
@@ -474,10 +474,10 @@ img:hover{
               <button id="toggle5" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
               <br><br>
               <ul id="dropitem6" style="display:none;">
-                <li><a style="text-decoration: none" href="https://raj-timestamp-api.herokuapp.com/">Unix Timestamp Converter  API Project</a></li>
+                <li><a style="text-decoration: none" href="https://rapidapi.com/moneygoddess888/api/nasdaq-stocks-dividend-history-live">NASDAQ Counters' Dividend History API - Node JS</a></li>
+                <li><a style="text-decoration: none" href="https://raj-timestamp-api.herokuapp.com/">Unix Timestamp Converter API Project</a></li>
                 <li><a style="text-decoration: none" href="https://rest-api-raj.herokuapp.com/api/places">Places Visited API Project</a></li>
                 <li><a style="text-decoration: none" href="https://whoami-headerparse-raj-2021.herokuapp.com/">Request Header Parser Microservice API Project</a></li>
-                <li><a style="text-decoration: none" href="https://url-shorterner-api-raj-2021.herokuapp.com/">Fullstack URL Shorterner API Project</a></li>
               </ul>
               <p><button id="clickView3" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p>
             </div>
@@ -532,12 +532,16 @@ img:hover{
                 <button id="toggle4" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
                 <br><br>
                 <ul id="dropitem5" style="display:none;">
+                  <li><a style="text-decoration: none" href="https://nasdaq-dividend-search-api.herokuapp.com/">Fullstack Dividend Stocks Data Pipeline and Analysis Project</a></li>
+                  <li><a style="text-decoration: none" href="https://vue-http-demo-e06ca.web.app/coaches">Find Developer Coach App - Vue JS</a></li>
+                  <li><a style="text-decoration: none" href="https://url-shorterner-api-raj-2021.herokuapp.com/">Fullstack URL Shorterner API Project</a></li>
+                  <li><a style="text-decoration: none" href="https://rubanero14.github.io/The-Learning-Resources-App-Vue-Demo/">Vue JS - Learning Resources App</a></li>
                   <li><a style="text-decoration: none" href="https://laravel-raj-blog.herokuapp.com/">Laravel Blog Project</a></li>
                 </ul>
                 <p><button id="clickView4" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p>
               </div>
               <div class="col-4">
-                <img src="http://pngimg.com/uploads/php/php_PNG12.png" alt="my projects" style="width: 300px;" class="img-fluid img-thumbnail mb-4"></div>
+                <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png" alt="my projects" style="width: 300px;" class="img-fluid img-thumbnail mb-4"></div>
               </div>
             </div>
           </div>
@@ -606,7 +610,6 @@ img:hover{
               <div class="col-4">       
                 <a href="https://www.projectdeep.my/index.php/course/professional-certificate-in-full-stack-developing/">
                   <img src="https://justlaw.asia/files/pictures/bac-logo.png" class="img-fluid img-thumbnail" alt="certified_web_developer" style="width:350px;"></a>
-
                 </div>
               </div>
               <hr class="my-5">
@@ -831,7 +834,7 @@ img:hover{
 
 
 
-                 <div id="footer1" class="footer-copyright text-center p-5 mt-5"><p>&copy; Copyright by <a href="mailto:rajarubancr@gmail.com" style="text-decoration: none;">Rajaruban</a> @ 2021</p>
+                 <div id="footer1" class="footer-copyright text-center p-5"><p>&copy; Copyright by <a href="mailto:rajarubancr@gmail.com" style="text-decoration: none;">Rajaruban</a> @ 2021</p>
                   <div id="mainbutton" class="btn btn-primary" style="border-radius: 50%; border-width: 2px; border-color: white; height: 40px; width: auto; justify-content: center; align-items: center;">
                     <div class="my-1 mt-1"><a href="https://t.me/hipzta"><i class="fa fa-paper-plane text-light"></i>   </a></div>
                   </div> &nbsp;&nbsp;
