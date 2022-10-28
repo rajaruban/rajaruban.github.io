@@ -1283,14 +1283,10 @@ var vm1 = document.getElementById("toggle");
      cm.onclick = function contactDetails(){
       if (ci.style.display !== "none"){
         ci.style.display = "none";
-        ci.style.removeProperty('visibility');
-        cm.style.removeProperty('display');
-        cm.style.visibility = "visible";
+        cm.style.display = "block"
       } else {
-        ci.style.visibility = "visible";
-        ci.style.removeProperty('display');
-        cm.style.display = "none";
-        cm.style.removeProperty('visibility');
+        ci.style.display = "block";
+        cm.style.display = "none"
       }
     };
 
