@@ -113,7 +113,7 @@ h6:hover{
   color: black;
 }
 
-#boardSetting:hover{
+#boardSetting{
   background: rgba(231, 229, 229, 0.36);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -121,19 +121,18 @@ h6:hover{
   -webkit-backdrop-filter: blur(14.6px);
   border: 1px solid rgba(231, 229, 229, 0.29);
   color:  white;
+  transition: 0.25s all ease-in-out;
 }
 
 #boardSetting:hover h1, #boardSetting:hover a {
- color: white;
+    color: white;
 }
 
-#boardSetting{
-  background-color: none;
-  color: white;
-  border-radius: 25px;
-  color: white;
-  transition: 0.25s all ease-in-out;
+#boardSetting a, #boardSetting a:hover {
+    text-decoration: none;
+    color: #fff;
 }
+
 .titleDivs:hover{
   background-color: white;
   border-radius: 25px;
@@ -176,9 +175,6 @@ td:hover{
 }
 img{
   transition: 0.2s all ease-in-out;
-}
-img:hover{
-  transform: scale(1.08);
 }
 
 #edu1{ 
@@ -437,7 +433,7 @@ img:hover{
       <div class="container p-3" id="boardSetting">
     <h1 id="webDev" class="p-4">FRONTEND DEVELOPMENT PROJECTS <i class="fab fa-vuejs"></i></h1>
     <div class="row">
-      <div class="col-8">
+      <div class="col-md-8">
         <p>Those are the projects and tasks that I have learn throughout the Programming course under Professional Certificate in Web Development. Kindly go through each of it in the links below;</p>
         <button id="toggle" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
         <br><br>
@@ -463,8 +459,8 @@ img:hover{
         </ul>
         <p><button id="clickView2" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p>
       </div>
-      <div class="col-4">
-        <img src="https://gccontent.blob.core.windows.net/gccontent/blogs/legacy/wijmo/2016/10/vuejs-logo.jpg" alt="Vue logo" style="width: 200px;" class="img-fluid img-thumbnail mb-4"></div>
+      <div class="col-md-4">
+        <img src="https://gccontent.blob.core.windows.net/gccontent/blogs/legacy/wijmo/2016/10/vuejs-logo.jpg" alt="Vue logo" style="width: 100%;" class="img-fluid img-thumbnail mb-4"></div>
       </div>
     </div>
   </div>
@@ -478,7 +474,7 @@ img:hover{
         <div class="container p-3" id="boardSetting">
           <h1 id="dbproject" class="p-4">BACKEND DEVELOPMENT PROJECTS <i class="fab fa-node"></i></h1>
           <div class="row">
-            <div class="col-8">
+            <div class="col-md-8">
               <p>Those are the Backend projects and tasks that I have learn throughout the Programming course under Professional Certificate in Web Development. Kindly go through each of it in the links below;</p>
               <button id="toggle5" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
               <br><br>
@@ -490,8 +486,8 @@ img:hover{
               </ul>
               <p><button id="clickView3" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p>
             </div>
-          <div class="col-4">
-            <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt="my projects" style="width: 300px;" class="img-fluid img-thumbnail mb-4"></div>
+          <div class="col-md-4">
+            <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt="my projects" style="width: 100%;" class="img-fluid img-thumbnail mb-4"></div>
           </div>
         </div>
       </div>
@@ -505,7 +501,7 @@ img:hover{
           <div class="container p-3" id="boardSetting">
             <h1 id="mobileAppsProject" class="p-4">MOBILE APP PROJECTS <i class="fab fa-react"></i></h1>
             <div class="row">
-              <div class="col-8">
+              <div class="col-md-8">
                 <p>Those are the Mobile App projects and tasks that I have learn throughout the Programming course under Professional Certificate in Web Development. Kindly go through each of it in the links below;</p>
                 <button id="toggle6" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
                 <br><br>
@@ -521,8 +517,8 @@ img:hover{
                 </ul>
                 <p><button id="clickView9" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p>
               </div>
-              <div class="col-4">
-                <img src="https://www.sphereinc.com/wp-content/uploads/2022/04/flutter-vs-react-native.png" alt="moblie app projects" style="width: 300px;" class="img-fluid img-thumbnail mb-4"></div>
+              <div class="col-md-4">
+                <img src="https://www.sphereinc.com/wp-content/uploads/2022/04/flutter-vs-react-native.png" alt="moblie app projects" style="width: 100%;" class="img-fluid img-thumbnail mb-4"></div>
               </div>
             </div>
           </div>
@@ -536,7 +532,7 @@ img:hover{
           <div class="container p-3" id="boardSetting">
             <h1 id="laravelproject" class="p-4">FULL STACK PROJECTS <i class="fab fa-node"></i></h1>
             <div class="row">
-              <div class="col-8">
+              <div class="col-md-8">
                 <p>Those are the Full-Stack projects and tasks that I have self-learn via self-practice with publicly available courses and bootcamps. Kindly go through each of it in the links below;</p>
                 <button id="toggle4" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
                 <br><br>
@@ -549,8 +545,8 @@ img:hover{
                 </ul>
                 <p><button id="clickView4" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p>
               </div>
-              <div class="col-4">
-                <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt="my projects" style="width: 300px;" class="img-fluid img-thumbnail mb-4"></div>
+              <div class="col-md-4">
+                <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt="my projects" style="width: 100%;" class="img-fluid img-thumbnail mb-4"></div>
               </div>
             </div>
           </div>
@@ -564,7 +560,7 @@ img:hover{
         <div class="container p-3" id="boardSetting">
           <h1 id="jsproject" class="p-4">JAVASCRIPT ALGORITHM & DATA STRUCTURE CODE PROJECTS <i class="fab fa-js-square"></i></h1>
           <div class="row">
-            <div class="col-8">
+            <div class="col-md-8">
               <p>Those are the Javascript projects and tasks that I have learn throughout the Programming course under Professional Certificate in Web Development. Kindly go through each of it in the links below;</p>
               <button id="toggle1" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button>
               <br><br>
@@ -586,8 +582,8 @@ img:hover{
               </ul>
               <p><button id="clickView5" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p>
             </div>
-            <div class="col-4">
-              <img src="data:image/png;base64,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" alt="my projects" style="width: 200px;" class="img-fluid img-thumbnail mb-4"></div>
+            <div class="col-md-4">
+              <img src="data:image/png;base64,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" alt="my projects" style="width: 100%;" class="img-fluid img-thumbnail mb-4"></div>
             </div>
           </div>
         </div>
@@ -601,7 +597,7 @@ img:hover{
           <div class="container p-3" id="boardSetting">
             <h1 id="education" class="p-4">EDUCATION <i class="fas fa-university"></i></h1>
             <div class="row">
-              <div class="col-8">
+              <div class="col-md-8">
                 <h2>Vue - The Complete Guide (incl. Router & Composition API)</h2>
                 <h3>2021-2022</h3>
                 <br>
@@ -617,14 +613,14 @@ img:hover{
                   <p><a id="mainbutton" href="https://www.udemy.com/certificate/UC-c893f4fa-301b-439f-814e-d04d15c15c29" class="btn btn-sm btn-dark my-1 glow-button" role="button" aria-pressed="true">View Digital Certificate</a></p>
                 </ul>
               </div>
-              <div class="col-4">       
+              <div class="col-md-4">       
                 <a href="https://www.udemy.com/certificate/UC-c893f4fa-301b-439f-814e-d04d15c15c29">
-                  <img src="https://logos-world.net/wp-content/uploads/2021/11/Udemy-Symbol.png" class="img-fluid img-thumbnail" alt="certified_vue_developer" style="width:350px;"></a>
+                  <img src="https://logos-world.net/wp-content/uploads/2021/11/Udemy-Symbol.png" class="img-fluid img-thumbnail" alt="certified_vue_developer" style="width:100%;"></a>
                 </div>
               </div>
               <hr class="my-5">
                 <div class="row my-3">
-                  <div class="col-8">
+                  <div class="col-md-8">
                     <h2><strong><a style="color: inherit; text-decoration: none;" href="https://www.projectdeep.my/index.php/course/professional-certificate-in-web-development/">Professional Certificate in Web Development</a></strong></h2>
                     <h3>2021</h3>
                     <br>
@@ -639,14 +635,14 @@ img:hover{
                       <p><a id="mainbutton" href="https://drive.google.com/file/d/1qJ-smRgk378aTZ5HYoyMcIo8ETRi9OHD/view?usp=sharing" class="btn btn-sm btn-primary my-1 glow-button" role="button" aria-pressed="true">View Digital Certificate</a></p>
                     </ul>
                   </div>
-                  <div class="col-4">       
+                  <div class="col-md-4">       
                     <a href="https://www.projectdeep.my/index.php/course/professional-certificate-in-full-stack-developing/">
-                    <img src="https://justlaw.asia/files/pictures/bac-logo.png" class="img-fluid img-thumbnail" alt="certified_web_developer" style="width:350px;"></a>
+                    <img src="https://justlaw.asia/files/pictures/bac-logo.png" class="img-fluid img-thumbnail" alt="certified_web_developer" style="width:100%;"></a>
                   </div>
               </div>
               <hr class="my-5">
               <div class="row my-3">
-                <div class="col-8">
+                <div class="col-md-8">
                   <h2>freeCodeCamp - Developer Skills Certifications <i class="fab fa-free-code-camp"></i></h2>
                   <h3>2020 - 2021</h3>
                   <h5>Studied in<a style="color: inherit; text-decoration: none;" href="https://www.freecodecamp.org/"><mark>freeCodeCamp</mark>'s online coding courses</a> and focused on modules as below:</h5>
@@ -656,13 +652,13 @@ img:hover{
                     <li><strong>Javascript Algorithms and Data Structures Certification</strong> (300hrs) <br><a id="mainbutton" href="https://www.freecodecamp.org/certification/rubanero/javascript-algorithms-and-data-structures" class="btn btn-sm btn-secondary glow-button" role="button" aria-pressed="true">View Digital Certificate</a></li><br>
                   </ul>
                 </div>
-                <div class="col-4">
-                  <a href="https://www.freecodecamp.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png" class="img-fluid img-thumbnail" alt="fcc_time" style="width: 400px;"></a>
+                <div class="col-md-4">
+                  <a href="https://www.freecodecamp.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png" class="img-fluid img-thumbnail" alt="fcc_time" style="width: 100%;"></a>
                 </div>
               </div>
               <hr class="my-5">
               <div class="row">
-                <div class="col-8">
+                <div class="col-md-8">
                   <h2> Cognitive Class - IBM Developer Skills Network <i class="fab fa-python"></i></h2>
                   <h3>2021</h3>
                   <h5>Studied in<a style="color: inherit; text-decoration: none;" href="https://courses.cognitiveclass.ai/courses/course-v1:Cognitiveclass+PY0101EN+v2/course/"><mark>cognitiveclass.ai</mark>'s online coding courses</a> and focused on modules as below:</h5>
@@ -673,13 +669,13 @@ img:hover{
                     <!--<li>Javascript Algorithms and Data Structures Certification (300hrs) <br><a id="mainbutton" href="https://www.freecodecamp.org/certification/rubanero/javascript-algorithms-and-data-structures" class="btn btn-sm btn-warning"  role="button" aria-pressed="true">View Digital Certificate</a></li><br>-->
                   </ul>
                 </div>
-                <div class="col-4">
-                  <a href="https://cognitiveclass.ai/"><img src="https://yt3.ggpht.com/ytc/AKedOLQ9xs0mA1uwmq8eQP4oLmqMltoa10cKlSMm8I06sg=s900-c-k-c0x00ffffff-no-rj" class="img-fluid img-thumbnail" alt="python_time" style="width: 400px;"></a>
+                <div class="col-md-4">
+                  <a href="https://cognitiveclass.ai/"><img src="https://yt3.ggpht.com/ytc/AKedOLQ9xs0mA1uwmq8eQP4oLmqMltoa10cKlSMm8I06sg=s900-c-k-c0x00ffffff-no-rj" class="img-fluid img-thumbnail" alt="python_time" style="width: 100%;"></a>
                 </div>
               </div>
               <hr class="my-5">
               <div class="row">
-                <div class="col-8">
+                <div class="col-md-8">
                   <h2><strong>Masters of Business Administration</strong> <kbd><a id="edu1" href="https://en.wikipedia.org/wiki/Master_of_Business_Administration">MBA</a></kbd></h2>
                   <h3>2020 - 2021</h3><br>
                   <h2><em><strong>CGPA:</strong></em> <kbd><a id="edu1" href="https://drive.google.com/file/d/1KdFx4rrXpJ-TxkjGMNkfd_fFfgEeEtvb/view?usp=sharing">3.75</a></kbd></h2><br>
@@ -702,8 +698,8 @@ img:hover{
                   </ul>
                   <!--Making a PDF non-downloadable is as simple as adding #toolbar=0 to the URL.-->
                 </div>
-                <div class="col-4">
-                  <a href="https://www.lincoln.edu.my/post_graduate/Master_of_Business_Administration"><img src="https://www.lincoln.edu.my/wp-content/uploads/2021/06/cropped-logoLincoln.png" class="img-fluid img-thumbnail" alt="mba_time" style="width: 400px;"></a>
+                <div class="col-md-4">
+                  <a href="https://www.lincoln.edu.my/post_graduate/Master_of_Business_Administration"><img src="https://www.lincoln.edu.my/wp-content/uploads/2021/06/cropped-logoLincoln.png" class="img-fluid img-thumbnail" alt="mba_time" style="width: 100%;"></a>
                 </div>
               </div>
               <br>
@@ -713,7 +709,7 @@ img:hover{
               <div id="dropitem3" style="display:none">
                 <hr>
                 <div class="row my-3">
-                  <div class="col-8">
+                  <div class="col-md-8">
                     <h2><strong>Diploma in Information Technology</strong></h2>
                     <h3>2008 - 2010</h3><br>
                     <h2><em><strong>CGPA: </strong></em><kbd>3.53</kbd></h2><br>
@@ -724,15 +720,15 @@ img:hover{
                     <samp>*Transcript will be provided upon request</samp>
                     <!--Making a PDF non-downloadable is as simple as adding #toolbar=0 to the URL.-->
                   </div>
-                  <div class="col-4">
-                    <a href="#"><img src="https://img.icons8.com/ios/452/university.png" class="img-fluid img-thumbnail" alt="college_time" style="width: 300px;"></a>
+                  <div class="col-md-4">
+                    <a href="#"><img src="https://img.icons8.com/ios/452/university.png" class="img-fluid img-thumbnail" alt="college_time" style="width: 100%;"></a>
                   </div>
                 </div>
                 <br>
                 <hr>
                 <br>
                 <div class="row my-3">
-                  <div class="col-8">
+                  <div class="col-md-8">
                     <h2><strong>Sijil Pelajaran Malaysia</strong></h2>
                     <h3>2003</h3><br>
                     <h2><em><strong>Result:</strong></em> 3<mark>A</mark>'s & 4<mark>B</mark>'s</h2><br>
@@ -743,8 +739,8 @@ img:hover{
                     <!--Making a PDF non-downloadable is as simple as adding #toolbar=0 to the URL.-->
                     <samp>*Certificate will be provided upon request</samp>
                   </div>
-                  <div class="col-4">
-                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcz_ly3l0tmq3MijTZpRrBdXUIm1H0IBTYHGFO5QpD66LxwNVcn2xzigU63k-EnTERx8M&usqp=CAU" class="img-fluid img-thumbnail" alt="school_time" style="width: 300px;"></a>
+                  <div class="col-md-4">
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcz_ly3l0tmq3MijTZpRrBdXUIm1H0IBTYHGFO5QpD66LxwNVcn2xzigU63k-EnTERx8M&usqp=CAU" class="img-fluid img-thumbnail" alt="school_time" style="width: 100%;"></a>
                   </div>
                 </div>
 
@@ -761,22 +757,35 @@ img:hover{
               <div class="container p-3" id="boardSetting">
                 <h1 id="skills" class="p-4">SKILLSETS <i class="fas fa-tools"></i></h1>
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-12">
                     <ul>
-                      <li>Website Design &amp; Development</li>
-                      <li>Javascript and its frameworks (Node, Vue, React-Native)</li>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Figma</li>
-                      <li>SQL</li>
+                      <li>Responsive Web Design [Intermediate]</li>
+                      <li>Javascript [Intermediate]</li>
+                      <li>Vue [Intermediate]</li>
+                      <li>HTML [Intermediate]</li>
+                      <li>Excel [Intermediate]</li>
+                      <li>Bootstrap [Intermediate]</li>
+                      <li>CSS [Intermediate]</li>
+                      <li>Web Scraping / Web Crawling [Intermediate]</li>
+                      <li>C# [Basic]</li>
+                      <li>React [Basic]</li>
+                      <li>Node [Basic]</li>
+                      <li>React-Native [Basic]</li>
+                      <li>ASP.NET [Basic]</li>
+                      <li>Flutter [Basic]</li>
+                      <li>Cypress [Basic]</li>
+                      <li>Figma [Basic]</li>
+                      <li>SQL [Basic]</li>
+                      <li>jQuery [Basic]</li>
+                      <li>MongoDB [Basic]</li>
                     </ul>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-6 p-5">
-                    <img src="https://biz30.timedoctor.com/images/2021/01/hire-a-web-designer.jpg" alt="web designer" style="width: 600px;" class="img-fluid img-thumbnail mb-4"></div>
-                    <div class="col-6 p-5">
-                      <img src="https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg" alt="coding" style="width: 600px;" class="img-fluid img-thumbnail mb-4"></div>
+                  <div class="col-6">
+                    <img src="https://biz30.timedoctor.com/images/2021/01/hire-a-web-designer.jpg" alt="web designer" style="width: 100%;" class="img-fluid img-thumbnail mb-4"></div>
+                    <div class="col-6">
+                      <img src="https://www.incimages.com/uploaded_files/image/1920x1080/software-computer-code-1940x900_35196.jpg" alt="coding" style="width: 100%;" class="img-fluid img-thumbnail mb-4"></div>
                     </div>
                     <p><button id="clickView7" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p>
                   </div>
@@ -792,7 +801,7 @@ img:hover{
                 <div class="container p-3" id="boardSetting">
                   <h1 id="experience" class="p-4">EXPERIENCE <i class="fas fa-briefcase"></i></h1>
                   <div class="row p-3">
-                    <div class="col-8">
+                    <div class="col-md-8">
                       <h2>Capital Platforms</h2>
                       <ul>
                        <li>November 2021 - Present</li>
@@ -812,26 +821,26 @@ img:hover{
                         </li>
                      </ul>
                    </div>
-                   <div class="col-4">
-                    <img src="https://www.capitalplatforms.net/wp-content/uploads/2015/03/Logo_Login_Header.png" class="img-fluid img-thumbnail" alt="CP logo">
+                   <div class="col-md-4">
+                    <img src="https://www.capitalplatforms.net/wp-content/uploads/2015/03/Logo_Login_Header.png" class="img-fluid img-thumbnail" alt="CP logo" class="w-100">
                   </div>
                 </div>
                   <hr>
                   <div class="row p-3">
-                    <div class="col-8">
+                    <div class="col-md-8">
                       <h2>Standard Chartered Bank</h2>
                       <ul>
                         <li>March 2007 - March 2021</li>
-                        <li>Role: Senior Business Development Executive</li>
+                        <li>Role: General Clerk, Global Operations Officer, Personal Financial Excutive and finally Senior Business Development Executive</li>
                       </ul>     
                     </div>
-                      <div class="col-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Standard_Chartered_%282021%29.svg/1200px-Standard_Chartered_%282021%29.svg.png" class="img-fluid img-thumbnail" alt="Standard Chartered logo">
+                      <div class="col-md-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Standard_Chartered_%282021%29.svg/1200px-Standard_Chartered_%282021%29.svg.png" class="img-fluid img-thumbnail" alt="Standard Chartered logo" class="w-100">
                       </div>
                     </div>
+                    <p><button id="clickView8" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p> 
                 </div>
-                <!-- <p><button id="toggle3" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button></p>
-                <p><button id="clickView8" style="border-radius: 25px; width: 100%; display: none;" class="btn btn-success glow-button" role="button" aria-pressed="true"><i class="fas fa-arrow-up"></i> Hide All <i class="fas fa-arrow-up"></i></button></p> -->
+                <!-- <p><button id="toggle3" style="background-color:mediumseagreen; color: white; width: 100%;" class="btn glow-button" role="button" aria-pressed="true">View More Details <i class="fas fa-arrow-down"></i></button></p>-->
                 <div id="dropitem4" style="display:none;">
                  <hr>
                  <div class="row mt-5 mb-5 p-3">
@@ -998,13 +1007,12 @@ var vm1 = document.getElementById("toggle");
         targetDiv6.style.display = "none";
         document.getElementById("toggle6").innerHTML = "View More Details " + '<i class="fas fa-arrow-down"></i>';
         vm7.style.background = "mediumseagreen";
-        bv9.style.display = "none"
-
+        bv9.style.display = "none";
       } else {
         targetDiv6.style.display = "block";
         document.getElementById("toggle6").innerHTML = "Hide " + '<i class="fas fa-arrow-up"></i>';
         vm7.style.background = "#357EC7";
-        bv9.style.display = "block"
+        bv9.style.display = "block";
       }
     };
   </script>
@@ -1181,6 +1189,33 @@ var vm1 = document.getElementById("toggle");
       }
     };
     
+    //ninth set
+    var sm9 = document.getElementById("mobileApps");
+    var cv9 = document.getElementById("titleSetting9");
+    var tdiv9 = document.getElementById("titleDiv9");
+    var bv9 = document.getElementById("clickView9");
+    cv9.onclick = function(){
+      if (sm9.style.display !== "none"){
+        sm9.style.display = "none";
+        tdiv9.style.display = "block";
+      } else {
+        sm9.style.display = "block";
+        tdiv9.style.display = "none";
+        bv9.style.display = "none";
+      }
+    };
+    bv9.onclick = function(){
+      if (sm9.style.display !== "none"){
+        sm9.style.display = "none";
+        tdiv9.style.display = "block";
+        bv9.style.display = "none";
+      } else {
+        sm9.style.display = "block";
+        tdiv9.style.display = "none";
+        bv9.style.display = "block";
+      }
+    };
+
     //eight set
     var sm8 = document.getElementById("employmentEx");
     var cv8 = document.getElementById("titleSetting8");
@@ -1205,33 +1240,6 @@ var vm1 = document.getElementById("toggle");
         sm8.style.display = "block";
         tdiv8.style.display = "none";
         bv8.style.display = "block";
-      }
-    };
-
-    //ninth set
-    var sm9 = document.getElementById("mobileApps");
-    var cv9 = document.getElementById("titleSetting9");
-    var tdiv9 = document.getElementById("titleDiv9");
-    var bv9 = document.getElementById("clickView9");
-    cv9.onclick = function(){
-      if (sm9.style.display !== "none"){
-        sm9.style.display = "none";
-        tdiv9.style.display = "block";
-      } else {
-        sm9.style.display = "block";
-        tdiv9.style.display = "none";
-        bv9.style.display = "block";
-      }
-    };
-    bv9.onclick = function(){
-      if (sm9.style.display !== "none"){
-        sm9.style.display = "none";
-        tdiv9.style.display = "block";
-        bv9.style.display = "none";
-      } else {
-        sm9.style.display = "block";
-        tdiv9.style.display = "none";
-        bv9.style.display = "block";
       }
     };
   </script>
